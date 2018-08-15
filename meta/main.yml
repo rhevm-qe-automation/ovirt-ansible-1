@@ -24,5 +24,7 @@ dependencies:
    name: oVirt.infra
  - oVirt.manageiq
  - oVirt.repositories
- - oVirt.vm-infra
+ - src: git+https://github.com/petr-balogh/ovirt-ansible-vm-infra.git
+   version: add_io_threads
+   name: oVirt.vm-infra
  - oVirt.v2v-conversion-host
