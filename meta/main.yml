@@ -18,7 +18,10 @@ dependencies:
  - oVirt.cluster-upgrade
  - oVirt.disaster-recovery
  - oVirt.engine-setup
- - oVirt.image-template
+ # til 1.1.8 will be released we have to use master
+ - src: git+https://github.com/oVirt/ovirt-ansible-image-template.git
+   version: master
+   name: oVirt.image-template
  - src: git+https://github.com/petr-balogh/ovirt-ansible-infra.git
    version: authentication_key_new_rebase_on_tareqs_patch
    name: oVirt.infra
