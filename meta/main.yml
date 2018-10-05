@@ -33,4 +33,4 @@ dependencies:
  - oVirt.v2v-conversion-host
 # from some reason it's not published on glaxy so comment it out for WA
 # - oVirt.hosted-engine-setup
- - oVirt.shutdown-env
+# - oVirt.shutdown-env
