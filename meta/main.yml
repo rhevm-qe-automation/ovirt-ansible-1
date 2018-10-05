@@ -31,5 +31,6 @@ dependencies:
    name: oVirt.repositories
  - oVirt.vm-infra
  - oVirt.v2v-conversion-host
- - oVirt.hosted-engine-setup
+# from some reason it's not published on glaxy so comment it out for WA
+# - oVirt.hosted-engine-setup
  - oVirt.shutdown-env
