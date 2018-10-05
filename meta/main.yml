@@ -17,8 +17,11 @@ galaxy_info:
 dependencies:
  - oVirt.cluster-upgrade
  - oVirt.disaster-recovery
- - oVirt.engine-setup
- # til 1.1.8 will be released we have to use master
+# till https://github.com/oVirt/ovirt-ansible-engine-setup/pull/26 and released
+# in 1.1.6 probably.
+ - src: git+https://github.com/petr-balogh/ovirt-ansible-engine-setup.git
+   name: oVirt.engine-setup
+ # till 1.1.8 will be released we have to use master
  - src: git+https://github.com/oVirt/ovirt-ansible-image-template.git
    version: master
    name: oVirt.image-template
