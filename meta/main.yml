@@ -17,7 +17,10 @@ galaxy_info:
 dependencies:
  - oVirt.cluster-upgrade
  - oVirt.disaster-recovery
- - oVirt.engine-setup
+# till https://github.com/oVirt/ovirt-ansible-engine-setup/pull/26 and released
+# in 1.1.6 probably.
+ - src: git+https://github.com/petr-balogh/ovirt-ansible-engine-setup.git
+   name: oVirt.engine-setup
  - oVirt.image-template
  - src: git+https://github.com/petr-balogh/ovirt-ansible-infra.git
    version: authentication_key_new_rebase_on_tareqs_patch
@@ -28,3 +31,5 @@ dependencies:
    name: oVirt.repositories
  - oVirt.vm-infra
  - oVirt.v2v-conversion-host
+ - oVirt.hosted-engine-setup
+ - oVirt.shutdown-env
