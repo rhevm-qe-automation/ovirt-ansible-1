@@ -21,7 +21,6 @@ dependencies:
 # in 1.1.6 probably.
  - src: git+https://github.com/petr-balogh/ovirt-ansible-engine-setup.git
    name: oVirt.engine-setup
- # till 1.1.8 will be released we have to use master
  - oVirt.image-template
  - src: git+https://github.com/petr-balogh/ovirt-ansible-infra.git
    version: authentication_key_new_rebase_on_tareqs_patch
