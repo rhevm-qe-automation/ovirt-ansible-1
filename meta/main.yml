@@ -22,17 +22,15 @@ dependencies:
  - src: git+https://github.com/petr-balogh/ovirt-ansible-engine-setup.git
    name: oVirt.engine-setup
  # till 1.1.8 will be released we have to use master
- - src: git+https://github.com/oVirt/ovirt-ansible-image-template.git
-   version: master
-   name: oVirt.image-template
+ - oVirt.image-template
  - src: git+https://github.com/petr-balogh/ovirt-ansible-infra.git
    version: authentication_key_new_rebase_on_tareqs_patch
    name: oVirt.infra
  - oVirt.manageiq
- - oVirt.repositories
- - src: git+https://github.com/petr-balogh/ovirt-ansible-vm-infra.git
-   version: add_io_threads
-   name: oVirt.vm-infra
+# WA till 1.1.3 of oVirt.repositoires will be released
+ - src: git+https://github.com/oVirt/ovirt-ansible-repositories.git
+   name: oVirt.repositories
+ - oVirt.vm-infra
  - oVirt.v2v-conversion-host
  - oVirt.hosted-engine-setup
  - oVirt.shutdown-env
